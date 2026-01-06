@@ -1,0 +1,58 @@
+.game-over {
+  text-align: center;
+  max-width: 400px;
+}
+
+.game-over h2 {
+  font-size: 1.5rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.final-score {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.score-number {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #e94560;
+  line-height: 1;
+}
+
+.score-label {
+  font-size: 1rem;
+  color: #888;
+}
+
+.last-city {
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+
+.last-city strong {
+  color: #eee;
+}
+
+.message {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.restart-button {
+  background: linear-gradient(135deg, #e94560, #0f3460);
+  border: none;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.restart-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(233, 69, 96, 0.4);
+}
