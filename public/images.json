@@ -1,3 +1,1420 @@
 {
-  "images": []
+  "images": [
+    {
+      "id": "west-seattle-01",
+      "file": "west/seattle-01.jpg",
+      "city": "Seattle",
+      "coast": "west"
+    },
+    {
+      "id": "west-seattle-02",
+      "file": "west/seattle-02.jpg",
+      "city": "Seattle",
+      "coast": "west"
+    },
+    {
+      "id": "west-portland-01",
+      "file": "west/portland-01.jpg",
+      "city": "Portland",
+      "coast": "west"
+    },
+    {
+      "id": "west-portland-02",
+      "file": "west/portland-02.jpg",
+      "city": "Portland",
+      "coast": "west"
+    },
+    {
+      "id": "west-san-francisco-01",
+      "file": "west/san-francisco-01.jpg",
+      "city": "San Francisco",
+      "coast": "west"
+    },
+    {
+      "id": "west-san-francisco-02",
+      "file": "west/san-francisco-02.jpg",
+      "city": "San Francisco",
+      "coast": "west"
+    },
+    {
+      "id": "west-los-angeles-01",
+      "file": "west/los-angeles-01.jpg",
+      "city": "Los Angeles",
+      "coast": "west"
+    },
+    {
+      "id": "west-los-angeles-02",
+      "file": "west/los-angeles-02.jpg",
+      "city": "Los Angeles",
+      "coast": "west"
+    },
+    {
+      "id": "west-san-diego-01",
+      "file": "west/san-diego-01.jpg",
+      "city": "San Diego",
+      "coast": "west"
+    },
+    {
+      "id": "west-san-diego-02",
+      "file": "west/san-diego-02.jpg",
+      "city": "San Diego",
+      "coast": "west"
+    },
+    {
+      "id": "west-sacramento-01",
+      "file": "west/sacramento-01.jpg",
+      "city": "Sacramento",
+      "coast": "west"
+    },
+    {
+      "id": "west-sacramento-02",
+      "file": "west/sacramento-02.jpg",
+      "city": "Sacramento",
+      "coast": "west"
+    },
+    {
+      "id": "west-oakland-01",
+      "file": "west/oakland-01.jpg",
+      "city": "Oakland",
+      "coast": "west"
+    },
+    {
+      "id": "west-oakland-02",
+      "file": "west/oakland-02.jpg",
+      "city": "Oakland",
+      "coast": "west"
+    },
+    {
+      "id": "west-phoenix-01",
+      "file": "west/phoenix-01.jpg",
+      "city": "Phoenix",
+      "coast": "west"
+    },
+    {
+      "id": "west-phoenix-02",
+      "file": "west/phoenix-02.jpg",
+      "city": "Phoenix",
+      "coast": "west"
+    },
+    {
+      "id": "east-new-york-01",
+      "file": "east/new-york-01.jpg",
+      "city": "New York",
+      "coast": "east"
+    },
+    {
+      "id": "east-new-york-02",
+      "file": "east/new-york-02.jpg",
+      "city": "New York",
+      "coast": "east"
+    },
+    {
+      "id": "east-boston-01",
+      "file": "east/boston-01.jpg",
+      "city": "Boston",
+      "coast": "east"
+    },
+    {
+      "id": "east-boston-02",
+      "file": "east/boston-02.jpg",
+      "city": "Boston",
+      "coast": "east"
+    },
+    {
+      "id": "east-philadelphia-01",
+      "file": "east/philadelphia-01.jpg",
+      "city": "Philadelphia",
+      "coast": "east"
+    },
+    {
+      "id": "east-philadelphia-02",
+      "file": "east/philadelphia-02.jpg",
+      "city": "Philadelphia",
+      "coast": "east"
+    },
+    {
+      "id": "east-miami-01",
+      "file": "east/miami-01.jpg",
+      "city": "Miami",
+      "coast": "east"
+    },
+    {
+      "id": "east-miami-02",
+      "file": "east/miami-02.jpg",
+      "city": "Miami",
+      "coast": "east"
+    },
+    {
+      "id": "east-washington-dc-01",
+      "file": "east/washington-dc-01.jpg",
+      "city": "Washington D.C.",
+      "coast": "east"
+    },
+    {
+      "id": "east-washington-dc-02",
+      "file": "east/washington-dc-02.jpg",
+      "city": "Washington D.C.",
+      "coast": "east"
+    },
+    {
+      "id": "east-baltimore-01",
+      "file": "east/baltimore-01.jpg",
+      "city": "Baltimore",
+      "coast": "east"
+    },
+    {
+      "id": "east-baltimore-02",
+      "file": "east/baltimore-02.jpg",
+      "city": "Baltimore",
+      "coast": "east"
+    },
+    {
+      "id": "east-atlanta-01",
+      "file": "east/atlanta-01.jpg",
+      "city": "Atlanta",
+      "coast": "east"
+    },
+    {
+      "id": "east-atlanta-02",
+      "file": "east/atlanta-02.jpg",
+      "city": "Atlanta",
+      "coast": "east"
+    },
+    {
+      "id": "east-charlotte-01",
+      "file": "east/charlotte-01.jpg",
+      "city": "Charlotte",
+      "coast": "east"
+    },
+    {
+      "id": "east-charlotte-02",
+      "file": "east/charlotte-02.jpg",
+      "city": "Charlotte",
+      "coast": "east"
+    },
+    {
+      "id": "west-seattle-03",
+      "file": "west/seattle-03.jpg",
+      "city": "Seattle",
+      "coast": "west",
+      "unsplashId": "wKsL8HVSYbU",
+      "photographer": "Meg von Haartman",
+      "unsplashLink": "https://unsplash.com/photos/seattles-modern-skyline-under-a-cloudy-sky-wKsL8HVSYbU"
+    },
+    {
+      "id": "west-seattle-04",
+      "file": "west/seattle-04.jpg",
+      "city": "Seattle",
+      "coast": "west",
+      "unsplashId": "28lp5By66_w",
+      "photographer": "Olga Andreyanova",
+      "unsplashLink": "https://unsplash.com/photos/white-bridge-over-body-of-water-during-daytime-28lp5By66_w"
+    },
+    {
+      "id": "west-seattle-05",
+      "file": "west/seattle-05.jpg",
+      "city": "Seattle",
+      "coast": "west",
+      "unsplashId": "pwMMUGeAkoI",
+      "photographer": "Olga Andreyanova",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-across-body-of-water-during-daytime-pwMMUGeAkoI"
+    },
+    {
+      "id": "west-seattle-06",
+      "file": "west/seattle-06.jpg",
+      "city": "Seattle",
+      "coast": "west",
+      "unsplashId": "InfX3mWUTF4",
+      "photographer": "Doctor Tinieblas",
+      "unsplashLink": "https://unsplash.com/photos/aerial-view-of-high-rise-buildings-InfX3mWUTF4"
+    },
+    {
+      "id": "west-seattle-07",
+      "file": "west/seattle-07.jpg",
+      "city": "Seattle",
+      "coast": "west",
+      "unsplashId": "alHSlsBmnug",
+      "photographer": "Launde Morel",
+      "unsplashLink": "https://unsplash.com/photos/gray-and-brown-high-rise-buildings-during-daytime-alHSlsBmnug"
+    },
+    {
+      "id": "west-seattle-08",
+      "file": "west/seattle-08.jpg",
+      "city": "Seattle",
+      "coast": "west",
+      "unsplashId": "8GssBBAriQY",
+      "photographer": "Pete Alexopoulos",
+      "unsplashLink": "https://unsplash.com/photos/a-group-of-tall-buildings-sitting-next-to-each-other-8GssBBAriQY"
+    },
+    {
+      "id": "west-portland-03",
+      "file": "west/portland-03.jpg",
+      "city": "Portland",
+      "coast": "west",
+      "unsplashId": "6WP7Jv8vl4Q",
+      "photographer": "Sean Oulashin",
+      "unsplashLink": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-6WP7Jv8vl4Q"
+    },
+    {
+      "id": "west-portland-04",
+      "file": "west/portland-04.jpg",
+      "city": "Portland",
+      "coast": "west",
+      "unsplashId": "rAPP-DE2VM0",
+      "photographer": "Josh Hild",
+      "unsplashLink": "https://unsplash.com/photos/a-couple-of-people-that-are-walking-across-a-street-rAPP-DE2VM0"
+    },
+    {
+      "id": "west-portland-05",
+      "file": "west/portland-05.jpg",
+      "city": "Portland",
+      "coast": "west",
+      "unsplashId": "mcPmG6yn7qI",
+      "photographer": "Julian Falk",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-seen-through-trees-on-a-hazy-day-mcPmG6yn7qI"
+    },
+    {
+      "id": "west-portland-06",
+      "file": "west/portland-06.jpg",
+      "city": "Portland",
+      "coast": "west",
+      "unsplashId": "k0VeQ6sXHGg",
+      "photographer": "Justin Shen",
+      "unsplashLink": "https://unsplash.com/photos/a-large-neon-sign-on-top-of-a-building-k0VeQ6sXHGg"
+    },
+    {
+      "id": "west-portland-07",
+      "file": "west/portland-07.jpg",
+      "city": "Portland",
+      "coast": "west",
+      "unsplashId": "Pqm_TTdvWTU",
+      "photographer": "Robin Davidson",
+      "unsplashLink": "https://unsplash.com/photos/white-bridge-over-the-river-under-blue-sky-and-white-clouds-during-daytime-Pqm_TTdvWTU"
+    },
+    {
+      "id": "west-portland-08",
+      "file": "west/portland-08.jpg",
+      "city": "Portland",
+      "coast": "west",
+      "unsplashId": "23gNYl9wa6c",
+      "photographer": "Tuan Nguyen",
+      "unsplashLink": "https://unsplash.com/photos/a-city-skyline-at-night-with-a-bridge-over-the-water-23gNYl9wa6c"
+    },
+    {
+      "id": "west-san-francisco-03",
+      "file": "west/san-francisco-03.jpg",
+      "city": "San Francisco",
+      "coast": "west",
+      "unsplashId": "-RpVLmBzlXA",
+      "photographer": "Lisha Riabinina",
+      "unsplashLink": "https://unsplash.com/photos/a-city-with-many-buildings--RpVLmBzlXA"
+    },
+    {
+      "id": "west-san-francisco-04",
+      "file": "west/san-francisco-04.jpg",
+      "city": "San Francisco",
+      "coast": "west",
+      "unsplashId": "kviIg3q40ww",
+      "photographer": "Finn J",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-under-blue-sky-during-daytime-kviIg3q40ww"
+    },
+    {
+      "id": "west-san-francisco-05",
+      "file": "west/san-francisco-05.jpg",
+      "city": "San Francisco",
+      "coast": "west",
+      "unsplashId": "313dueuxHls",
+      "photographer": "Jamie Street",
+      "unsplashLink": "https://unsplash.com/photos/high-angle-photography-of-urban-area-313dueuxHls"
+    },
+    {
+      "id": "west-san-francisco-06",
+      "file": "west/san-francisco-06.jpg",
+      "city": "San Francisco",
+      "coast": "west",
+      "unsplashId": "p5qc5Xbew0U",
+      "photographer": "Ugi K.",
+      "unsplashLink": "https://unsplash.com/photos/a-city-street-with-buildings-and-trees-p5qc5Xbew0U"
+    },
+    {
+      "id": "west-san-francisco-07",
+      "file": "west/san-francisco-07.jpg",
+      "city": "San Francisco",
+      "coast": "west",
+      "unsplashId": "GBzIeFY-NWg",
+      "photographer": "Jessica Yap",
+      "unsplashLink": "https://unsplash.com/photos/white-and-black-concrete-building-during-daytime-GBzIeFY-NWg"
+    },
+    {
+      "id": "west-san-francisco-08",
+      "file": "west/san-francisco-08.jpg",
+      "city": "San Francisco",
+      "coast": "west",
+      "unsplashId": "4gFmmn3FM7w",
+      "photographer": "Jessica Yap",
+      "unsplashLink": "https://unsplash.com/photos/brown-wooden-bench-near-white-flowers-4gFmmn3FM7w"
+    },
+    {
+      "id": "west-los-angeles-03",
+      "file": "west/los-angeles-03.jpg",
+      "city": "Los Angeles",
+      "coast": "west",
+      "unsplashId": "yXq6IEWoOcI",
+      "photographer": "Jeffrey Clayton",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-with-mountains-in-the-background-yXq6IEWoOcI"
+    },
+    {
+      "id": "west-los-angeles-04",
+      "file": "west/los-angeles-04.jpg",
+      "city": "Los Angeles",
+      "coast": "west",
+      "unsplashId": "Dp10BHl4YB4",
+      "photographer": "Edgar Torabyan",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-with-tall-buildings-in-the-background-Dp10BHl4YB4"
+    },
+    {
+      "id": "west-los-angeles-05",
+      "file": "west/los-angeles-05.jpg",
+      "city": "Los Angeles",
+      "coast": "west",
+      "unsplashId": "NGt7dL9vXrA",
+      "photographer": "Nils Huenerfuerst",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-from-a-high-point-of-view-NGt7dL9vXrA"
+    },
+    {
+      "id": "west-los-angeles-06",
+      "file": "west/los-angeles-06.jpg",
+      "city": "Los Angeles",
+      "coast": "west",
+      "unsplashId": "gATTWeLmOEI",
+      "photographer": "Marius Christensen",
+      "unsplashLink": "https://unsplash.com/photos/cars-on-road-near-high-rise-buildings-during-daytime-gATTWeLmOEI"
+    },
+    {
+      "id": "west-los-angeles-07",
+      "file": "west/los-angeles-07.jpg",
+      "city": "Los Angeles",
+      "coast": "west",
+      "unsplashId": "LTPZHlPx0fM",
+      "photographer": "Alan Carrillo",
+      "unsplashLink": "https://unsplash.com/photos/time-lapse-photography-of-highway-leading-to-city-LTPZHlPx0fM"
+    },
+    {
+      "id": "west-los-angeles-08",
+      "file": "west/los-angeles-08.jpg",
+      "city": "Los Angeles",
+      "coast": "west",
+      "unsplashId": "BLoJjYVUuBg",
+      "photographer": "Vojtech Bruzek",
+      "unsplashLink": "https://unsplash.com/photos/aerial-photography-of-assorted-color-concrete-buildings-BLoJjYVUuBg"
+    },
+    {
+      "id": "west-san-diego-03",
+      "file": "west/san-diego-03.jpg",
+      "city": "San Diego",
+      "coast": "west",
+      "unsplashId": "_e_ybUhGvQA",
+      "photographer": "Malik Earnest",
+      "unsplashLink": "https://unsplash.com/photos/structural-photo-of-high-rise-buildings-near-body-of-water-_e_ybUhGvQA"
+    },
+    {
+      "id": "west-san-diego-04",
+      "file": "west/san-diego-04.jpg",
+      "city": "San Diego",
+      "coast": "west",
+      "unsplashId": "njgF_ivGIIs",
+      "photographer": "Zack Dowdy",
+      "unsplashLink": "https://unsplash.com/photos/white-concrete-high-rise-building-njgF_ivGIIs"
+    },
+    {
+      "id": "west-san-diego-05",
+      "file": "west/san-diego-05.jpg",
+      "city": "San Diego",
+      "coast": "west",
+      "unsplashId": "6C35p33MiQ4",
+      "photographer": "Megan Ellis",
+      "unsplashLink": "https://unsplash.com/photos/people-watching-football-game-during-daytime-6C35p33MiQ4"
+    },
+    {
+      "id": "west-san-diego-06",
+      "file": "west/san-diego-06.jpg",
+      "city": "San Diego",
+      "coast": "west",
+      "unsplashId": "OlQiF6x6WSA",
+      "photographer": "frank mckenna",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-across-the-water-OlQiF6x6WSA"
+    },
+    {
+      "id": "west-san-diego-07",
+      "file": "west/san-diego-07.jpg",
+      "city": "San Diego",
+      "coast": "west",
+      "unsplashId": "bp99vhUlPAA",
+      "photographer": "Stephen Crane",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-across-the-water-bp99vhUlPAA"
+    },
+    {
+      "id": "west-san-diego-08",
+      "file": "west/san-diego-08.jpg",
+      "city": "San Diego",
+      "coast": "west",
+      "unsplashId": "kowaCneEmHQ",
+      "photographer": "angelo cornejo",
+      "unsplashLink": "https://unsplash.com/photos/small-dog-wearing-a-hat-and-jacket-outdoors-kowaCneEmHQ"
+    },
+    {
+      "id": "west-sacramento-03",
+      "file": "west/sacramento-03.jpg",
+      "city": "Sacramento",
+      "coast": "west",
+      "unsplashId": "eR-eIx0UkyY",
+      "photographer": "Michael Kahn",
+      "unsplashLink": "https://unsplash.com/photos/a-building-that-has-a-lot-of-windows-on-it-eR-eIx0UkyY"
+    },
+    {
+      "id": "west-sacramento-04",
+      "file": "west/sacramento-04.jpg",
+      "city": "Sacramento",
+      "coast": "west",
+      "unsplashId": "uysGlhbld5g",
+      "photographer": "Michael Kahn",
+      "unsplashLink": "https://unsplash.com/photos/a-traffic-light-on-a-city-street-with-buildings-in-the-background-uysGlhbld5g"
+    },
+    {
+      "id": "west-sacramento-05",
+      "file": "west/sacramento-05.jpg",
+      "city": "Sacramento",
+      "coast": "west",
+      "unsplashId": "9fhUHWuaaA8",
+      "photographer": "Joel Durkee",
+      "unsplashLink": "https://unsplash.com/photos/white-concrete-building-under-blue-sky-during-daytime-9fhUHWuaaA8"
+    },
+    {
+      "id": "west-sacramento-06",
+      "file": "west/sacramento-06.jpg",
+      "city": "Sacramento",
+      "coast": "west",
+      "unsplashId": "1hgbA3dWb84",
+      "photographer": "Leo_Visions",
+      "unsplashLink": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-1hgbA3dWb84"
+    },
+    {
+      "id": "west-sacramento-07",
+      "file": "west/sacramento-07.jpg",
+      "city": "Sacramento",
+      "coast": "west",
+      "unsplashId": "HvIq2Gdynds",
+      "photographer": "Aiden Frazier",
+      "unsplashLink": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-HvIq2Gdynds"
+    },
+    {
+      "id": "west-sacramento-08",
+      "file": "west/sacramento-08.jpg",
+      "city": "Sacramento",
+      "coast": "west",
+      "unsplashId": "wQt0VQ4F9TY",
+      "photographer": "Leo_Visions",
+      "unsplashLink": "https://unsplash.com/photos/yellow-tower-bridge-with-cityscape-in-background-wQt0VQ4F9TY"
+    },
+    {
+      "id": "west-oakland-03",
+      "file": "west/oakland-03.jpg",
+      "city": "Oakland",
+      "coast": "west",
+      "unsplashId": "lpZOTSWB4i4",
+      "photographer": "Michael Kahn",
+      "unsplashLink": "https://unsplash.com/photos/a-city-street-filled-with-lots-of-traffic-next-to-tall-buildings-lpZOTSWB4i4"
+    },
+    {
+      "id": "west-oakland-04",
+      "file": "west/oakland-04.jpg",
+      "city": "Oakland",
+      "coast": "west",
+      "unsplashId": "eBWlTwuP8cM",
+      "photographer": "Michael Kahn",
+      "unsplashLink": "https://unsplash.com/photos/a-city-street-filled-with-lots-of-traffic-next-to-tall-buildings-eBWlTwuP8cM"
+    },
+    {
+      "id": "west-oakland-05",
+      "file": "west/oakland-05.jpg",
+      "city": "Oakland",
+      "coast": "west",
+      "unsplashId": "778PXh85QbE",
+      "photographer": "Michael Kahn",
+      "unsplashLink": "https://unsplash.com/photos/a-city-street-filled-with-lots-of-traffic-next-to-tall-buildings-778PXh85QbE"
+    },
+    {
+      "id": "west-oakland-06",
+      "file": "west/oakland-06.jpg",
+      "city": "Oakland",
+      "coast": "west",
+      "unsplashId": "QJmVlYe7geg",
+      "photographer": "Cedric Letsch",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-during-night-time-QJmVlYe7geg"
+    },
+    {
+      "id": "west-oakland-07",
+      "file": "west/oakland-07.jpg",
+      "city": "Oakland",
+      "coast": "west",
+      "unsplashId": "thcaxSFiCl8",
+      "photographer": "James A. Molnar",
+      "unsplashLink": "https://unsplash.com/photos/a-bridge-over-water-thcaxSFiCl8"
+    },
+    {
+      "id": "west-oakland-08",
+      "file": "west/oakland-08.jpg",
+      "city": "Oakland",
+      "coast": "west",
+      "unsplashId": "AnQkSDWqN5I",
+      "photographer": "James A. Molnar",
+      "unsplashLink": "https://unsplash.com/photos/a-body-of-water-with-a-city-in-the-background-AnQkSDWqN5I"
+    },
+    {
+      "id": "west-phoenix-03",
+      "file": "west/phoenix-03.jpg",
+      "city": "Phoenix",
+      "coast": "west",
+      "unsplashId": "f8jEp6rD91o",
+      "photographer": "PJ Gal-Szabo",
+      "unsplashLink": "https://unsplash.com/photos/red-and-yellow-string-lights-f8jEp6rD91o"
+    },
+    {
+      "id": "west-phoenix-04",
+      "file": "west/phoenix-04.jpg",
+      "city": "Phoenix",
+      "coast": "west",
+      "unsplashId": "RcDEbNQsjHU",
+      "photographer": "Nils Huenerfuerst",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-with-tall-buildings-RcDEbNQsjHU"
+    },
+    {
+      "id": "west-phoenix-05",
+      "file": "west/phoenix-05.jpg",
+      "city": "Phoenix",
+      "coast": "west",
+      "unsplashId": "N7UPzLvgDH4",
+      "photographer": "James A. Molnar",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-with-mountains-in-the-background-N7UPzLvgDH4"
+    },
+    {
+      "id": "west-phoenix-06",
+      "file": "west/phoenix-06.jpg",
+      "city": "Phoenix",
+      "coast": "west",
+      "unsplashId": "HWLyAQ4Jsgc",
+      "photographer": "Nader Abushhab",
+      "unsplashLink": "https://unsplash.com/photos/people-on-beach-during-daytime-HWLyAQ4Jsgc"
+    },
+    {
+      "id": "west-phoenix-07",
+      "file": "west/phoenix-07.jpg",
+      "city": "Phoenix",
+      "coast": "west",
+      "unsplashId": "7EHHidt3wyc",
+      "photographer": "Denny Ryanto",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-at-night-7EHHidt3wyc"
+    },
+    {
+      "id": "west-phoenix-08",
+      "file": "west/phoenix-08.jpg",
+      "city": "Phoenix",
+      "coast": "west",
+      "unsplashId": "BMqxKZxDbiM",
+      "photographer": "Strange Happenings",
+      "unsplashLink": "https://unsplash.com/photos/graffiti-stickers-on-a-chain-link-fence-at-night-BMqxKZxDbiM"
+    },
+    {
+      "id": "west-denver-01",
+      "file": "west/denver-01.jpg",
+      "city": "Denver",
+      "coast": "west",
+      "unsplashId": "Q9X_p5dDq_8",
+      "photographer": "Bill Griepenstroh",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-with-mountains-in-the-background-Q9X_p5dDq_8"
+    },
+    {
+      "id": "west-denver-02",
+      "file": "west/denver-02.jpg",
+      "city": "Denver",
+      "coast": "west",
+      "unsplashId": "H80Yw_6hpR0",
+      "photographer": "Steph Wilson",
+      "unsplashLink": "https://unsplash.com/photos/a-rainbow-over-a-city-H80Yw_6hpR0"
+    },
+    {
+      "id": "west-denver-03",
+      "file": "west/denver-03.jpg",
+      "city": "Denver",
+      "coast": "west",
+      "unsplashId": "GPjse2kaUKA",
+      "photographer": "Shade",
+      "unsplashLink": "https://unsplash.com/photos/a-city-skyline-with-tall-buildings-GPjse2kaUKA"
+    },
+    {
+      "id": "west-denver-04",
+      "file": "west/denver-04.jpg",
+      "city": "Denver",
+      "coast": "west",
+      "unsplashId": "9FLQ-n9DKCk",
+      "photographer": "Jake Knight-Lang",
+      "unsplashLink": "https://unsplash.com/photos/a-balcony-with-a-view-of-the-city-below-9FLQ-n9DKCk"
+    },
+    {
+      "id": "west-denver-05",
+      "file": "west/denver-05.jpg",
+      "city": "Denver",
+      "coast": "west",
+      "unsplashId": "QFTnjSJwdFQ",
+      "photographer": "Andrew",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-at-night-through-a-rain-covered-window-QFTnjSJwdFQ"
+    },
+    {
+      "id": "west-denver-06",
+      "file": "west/denver-06.jpg",
+      "city": "Denver",
+      "coast": "west",
+      "unsplashId": "Xa4phf71fOU",
+      "photographer": "Josh Hild",
+      "unsplashLink": "https://unsplash.com/photos/cars-on-road-in-city-during-night-time-Xa4phf71fOU"
+    },
+    {
+      "id": "west-denver-07",
+      "file": "west/denver-07.jpg",
+      "city": "Denver",
+      "coast": "west",
+      "unsplashId": "3kKkeN_2F8A",
+      "photographer": "Tai Kahn",
+      "unsplashLink": "https://unsplash.com/photos/a-puddle-of-water-on-a-road-3kKkeN_2F8A"
+    },
+    {
+      "id": "west-denver-08",
+      "file": "west/denver-08.jpg",
+      "city": "Denver",
+      "coast": "west",
+      "unsplashId": "6vCjaY4JDrU",
+      "photographer": "Tania V",
+      "unsplashLink": "https://unsplash.com/photos/a-city-street-filled-with-lots-of-tall-buildings-6vCjaY4JDrU"
+    },
+    {
+      "id": "west-las-vegas-01",
+      "file": "west/las-vegas-01.jpg",
+      "city": "Las Vegas",
+      "coast": "west",
+      "unsplashId": "cKrxUOF88VI",
+      "photographer": "Wesley Tingey",
+      "unsplashLink": "https://unsplash.com/photos/white-light-raised-to-clouds-at-nighttime-cKrxUOF88VI"
+    },
+    {
+      "id": "west-las-vegas-02",
+      "file": "west/las-vegas-02.jpg",
+      "city": "Las Vegas",
+      "coast": "west",
+      "unsplashId": "UX6vHrVrdg4",
+      "photographer": "Steven Pahel",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-at-sunset-with-clouds-in-the-sky-UX6vHrVrdg4"
+    },
+    {
+      "id": "west-las-vegas-03",
+      "file": "west/las-vegas-03.jpg",
+      "city": "Las Vegas",
+      "coast": "west",
+      "unsplashId": "yVfJ7z7B2uY",
+      "photographer": "Christian Gracia",
+      "unsplashLink": "https://unsplash.com/photos/a-tall-tower-against-a-clear-blue-sky-yVfJ7z7B2uY"
+    },
+    {
+      "id": "west-las-vegas-04",
+      "file": "west/las-vegas-04.jpg",
+      "city": "Las Vegas",
+      "coast": "west",
+      "unsplashId": "zPkqmqBZnPA",
+      "photographer": "Ameer Basheer",
+      "unsplashLink": "https://unsplash.com/photos/city-with-fireworks-during-night-time-zPkqmqBZnPA"
+    },
+    {
+      "id": "west-las-vegas-05",
+      "file": "west/las-vegas-05.jpg",
+      "city": "Las Vegas",
+      "coast": "west",
+      "unsplashId": "L5IQUafkbWY",
+      "photographer": "Kenny Eliason",
+      "unsplashLink": "https://unsplash.com/photos/gray-building-under-blue-sky-and-white-clouds-during-daytime-L5IQUafkbWY"
+    },
+    {
+      "id": "west-las-vegas-06",
+      "file": "west/las-vegas-06.jpg",
+      "city": "Las Vegas",
+      "coast": "west",
+      "unsplashId": "3NrET4bLM4Y",
+      "photographer": "Flavio Waser",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-from-a-plane-window-3NrET4bLM4Y"
+    },
+    {
+      "id": "west-las-vegas-07",
+      "file": "west/las-vegas-07.jpg",
+      "city": "Las Vegas",
+      "coast": "west",
+      "unsplashId": "DRW2Jo60Pb8",
+      "photographer": "Kenny Eliason",
+      "unsplashLink": "https://unsplash.com/photos/white-and-gray-concrete-building-at-daytime-DRW2Jo60Pb8"
+    },
+    {
+      "id": "west-las-vegas-08",
+      "file": "west/las-vegas-08.jpg",
+      "city": "Las Vegas",
+      "coast": "west",
+      "unsplashId": "yFD7UytTePE",
+      "photographer": "Christian Gracia",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-illuminated-at-night-with-distant-lights-yFD7UytTePE"
+    },
+    {
+      "id": "east-new-york-03",
+      "file": "east/new-york-03.jpg",
+      "city": "New York",
+      "coast": "east",
+      "unsplashId": "oluK0uvAZ1k",
+      "photographer": "Bernd 📷 Dittrich",
+      "unsplashLink": "https://unsplash.com/photos/a-city-skyline-at-night-oluK0uvAZ1k"
+    },
+    {
+      "id": "east-new-york-04",
+      "file": "east/new-york-04.jpg",
+      "city": "New York",
+      "coast": "east",
+      "unsplashId": "6JhotLqnA_8",
+      "photographer": "Danny Best",
+      "unsplashLink": "https://unsplash.com/photos/grayscale-photography-of-new-york-city-6JhotLqnA_8"
+    },
+    {
+      "id": "east-new-york-05",
+      "file": "east/new-york-05.jpg",
+      "city": "New York",
+      "coast": "east",
+      "unsplashId": "_QVLisMIR_0",
+      "photographer": "Elizabeth Cullen",
+      "unsplashLink": "https://unsplash.com/photos/a-large-body-of-water-with-a-city-in-the-background-_QVLisMIR_0"
+    },
+    {
+      "id": "east-new-york-06",
+      "file": "east/new-york-06.jpg",
+      "city": "New York",
+      "coast": "east",
+      "unsplashId": "NUtKeObE4jI",
+      "photographer": "Crystal Jo",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-under-blue-and-white-sunny-cloudy-sky-during-daytime-NUtKeObE4jI"
+    },
+    {
+      "id": "east-new-york-07",
+      "file": "east/new-york-07.jpg",
+      "city": "New York",
+      "coast": "east",
+      "unsplashId": "7UuJiWf_3G8",
+      "photographer": "Zoshua Colah",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-water-7UuJiWf_3G8"
+    },
+    {
+      "id": "east-new-york-08",
+      "file": "east/new-york-08.jpg",
+      "city": "New York",
+      "coast": "east",
+      "unsplashId": "yJDeuEpZnIM",
+      "photographer": "Zoshua Colah",
+      "unsplashLink": "https://unsplash.com/photos/a-large-body-of-water-with-a-city-in-the-background-yJDeuEpZnIM"
+    },
+    {
+      "id": "east-boston-03",
+      "file": "east/boston-03.jpg",
+      "city": "Boston",
+      "coast": "east",
+      "unsplashId": "65m6fvWtcGA",
+      "photographer": "Kumar Mehul",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-skyline-from-across-the-water-65m6fvWtcGA"
+    },
+    {
+      "id": "east-boston-04",
+      "file": "east/boston-04.jpg",
+      "city": "Boston",
+      "coast": "east",
+      "unsplashId": "O9Pw9fdtl1s",
+      "photographer": "Kumar Mehul",
+      "unsplashLink": "https://unsplash.com/photos/a-black-and-white-photo-of-a-city-skyline-O9Pw9fdtl1s"
+    },
+    {
+      "id": "east-boston-05",
+      "file": "east/boston-05.jpg",
+      "city": "Boston",
+      "coast": "east",
+      "unsplashId": "1XrjPq_MAXQ",
+      "photographer": "Osman Rana",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-across-body-of-water-during-night-time-1XrjPq_MAXQ"
+    },
+    {
+      "id": "east-boston-06",
+      "file": "east/boston-06.jpg",
+      "city": "Boston",
+      "coast": "east",
+      "unsplashId": "vzeQUIfyVlo",
+      "photographer": "Pragyan Goswami",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-across-body-of-water-under-blue-and-white-sunny-cloudy-sky-during-daytime-vzeQUIfyVlo"
+    },
+    {
+      "id": "east-boston-07",
+      "file": "east/boston-07.jpg",
+      "city": "Boston",
+      "coast": "east",
+      "unsplashId": "8rw72PhYBUI",
+      "photographer": "Sawyer Bergeron",
+      "unsplashLink": "https://unsplash.com/photos/a-tall-clock-tower-towering-over-a-city-8rw72PhYBUI"
+    },
+    {
+      "id": "east-boston-08",
+      "file": "east/boston-08.jpg",
+      "city": "Boston",
+      "coast": "east",
+      "unsplashId": "RybQAm88CGg",
+      "photographer": "Brett Wharton",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-with-tall-buildings-RybQAm88CGg"
+    },
+    {
+      "id": "east-philadelphia-03",
+      "file": "east/philadelphia-03.jpg",
+      "city": "Philadelphia",
+      "coast": "east",
+      "unsplashId": "CgwuBOfjwbc",
+      "photographer": "jing chen",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-with-modern-skyscrapers-under-cloudy-sky-CgwuBOfjwbc"
+    },
+    {
+      "id": "east-philadelphia-04",
+      "file": "east/philadelphia-04.jpg",
+      "city": "Philadelphia",
+      "coast": "east",
+      "unsplashId": "oy_gQcqlGYk",
+      "photographer": "Mike Conway",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-skyline-from-a-rooftop-oy_gQcqlGYk"
+    },
+    {
+      "id": "east-philadelphia-05",
+      "file": "east/philadelphia-05.jpg",
+      "city": "Philadelphia",
+      "coast": "east",
+      "unsplashId": "oxTSUoWlO6M",
+      "photographer": "Catherine Kerr",
+      "unsplashLink": "https://unsplash.com/photos/a-city-with-tall-buildings-oxTSUoWlO6M"
+    },
+    {
+      "id": "east-philadelphia-06",
+      "file": "east/philadelphia-06.jpg",
+      "city": "Philadelphia",
+      "coast": "east",
+      "unsplashId": "x_MrSvy7Gdw",
+      "photographer": "Kelly Kiernan",
+      "unsplashLink": "https://unsplash.com/photos/timelapse-photography-of-street-and-high-rise-buildings-x_MrSvy7Gdw"
+    },
+    {
+      "id": "east-philadelphia-07",
+      "file": "east/philadelphia-07.jpg",
+      "city": "Philadelphia",
+      "coast": "east",
+      "unsplashId": "nBKVpOQuLwM",
+      "photographer": "Kelly Kiernan",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-during-sunset-with-rainbow-nBKVpOQuLwM"
+    },
+    {
+      "id": "east-philadelphia-08",
+      "file": "east/philadelphia-08.jpg",
+      "city": "Philadelphia",
+      "coast": "east",
+      "unsplashId": "5rRzN_a0RzY",
+      "photographer": "Jimmy Woo",
+      "unsplashLink": "https://unsplash.com/photos/a-large-building-with-a-clock-tower-in-the-middle-of-a-park-5rRzN_a0RzY"
+    },
+    {
+      "id": "east-miami-03",
+      "file": "east/miami-03.jpg",
+      "city": "Miami",
+      "coast": "east",
+      "unsplashId": "l5Flo7mEs0U",
+      "photographer": "Rolando Yera",
+      "unsplashLink": "https://unsplash.com/photos/a-bridge-over-water-with-a-city-in-the-background-l5Flo7mEs0U"
+    },
+    {
+      "id": "east-miami-04",
+      "file": "east/miami-04.jpg",
+      "city": "Miami",
+      "coast": "east",
+      "unsplashId": "QfBb6Xbuf0I",
+      "photographer": "Oskar Kadaksoo",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-with-tall-buildings-QfBb6Xbuf0I"
+    },
+    {
+      "id": "east-miami-05",
+      "file": "east/miami-05.jpg",
+      "city": "Miami",
+      "coast": "east",
+      "unsplashId": "1T4xUbhjmmk",
+      "photographer": "Rolando Yera",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-from-across-the-water-1T4xUbhjmmk"
+    },
+    {
+      "id": "east-miami-06",
+      "file": "east/miami-06.jpg",
+      "city": "Miami",
+      "coast": "east",
+      "unsplashId": "t5jzwgLQTjs",
+      "photographer": "Zoshua Colah",
+      "unsplashLink": "https://unsplash.com/photos/cityscape-view-with-buildings-across-a-body-of-water-t5jzwgLQTjs"
+    },
+    {
+      "id": "east-miami-07",
+      "file": "east/miami-07.jpg",
+      "city": "Miami",
+      "coast": "east",
+      "unsplashId": "z7qpoWFPxTQ",
+      "photographer": "Zoshua Colah",
+      "unsplashLink": "https://unsplash.com/photos/skyscrapers-stand-tall-along-the-water-z7qpoWFPxTQ"
+    },
+    {
+      "id": "east-miami-08",
+      "file": "east/miami-08.jpg",
+      "city": "Miami",
+      "coast": "east",
+      "unsplashId": "X_jVmZDlc5E",
+      "photographer": "Zoshua Colah",
+      "unsplashLink": "https://unsplash.com/photos/miami-skyline-viewed-across-the-water-X_jVmZDlc5E"
+    },
+    {
+      "id": "east-washington-dc-03",
+      "file": "east/washington-dc-03.jpg",
+      "city": "Washington D.C.",
+      "coast": "east",
+      "unsplashId": "qsKrZzSC3vM",
+      "photographer": "Sonder Bridge Photography",
+      "unsplashLink": "https://unsplash.com/photos/washington-capitol-qsKrZzSC3vM"
+    },
+    {
+      "id": "east-washington-dc-04",
+      "file": "east/washington-dc-04.jpg",
+      "city": "Washington D.C.",
+      "coast": "east",
+      "unsplashId": "RlCdGYCrlq4",
+      "photographer": "Sonder Bridge Photography",
+      "unsplashLink": "https://unsplash.com/photos/man-painting-beside-plants-RlCdGYCrlq4"
+    },
+    {
+      "id": "east-washington-dc-05",
+      "file": "east/washington-dc-05.jpg",
+      "city": "Washington D.C.",
+      "coast": "east",
+      "unsplashId": "zg1TZegvdVs",
+      "photographer": "Bovia & Co. Photography",
+      "unsplashLink": "https://unsplash.com/photos/a-large-arch-with-a-sign-on-it-in-a-city-zg1TZegvdVs"
+    },
+    {
+      "id": "east-washington-dc-06",
+      "file": "east/washington-dc-06.jpg",
+      "city": "Washington D.C.",
+      "coast": "east",
+      "unsplashId": "nuvaRAeaMdc",
+      "photographer": "Michael Niessl",
+      "unsplashLink": "https://unsplash.com/photos/high-rise-building-city-during-nighttime-nuvaRAeaMdc"
+    },
+    {
+      "id": "east-washington-dc-07",
+      "file": "east/washington-dc-07.jpg",
+      "city": "Washington D.C.",
+      "coast": "east",
+      "unsplashId": "f3iQaE19q-k",
+      "photographer": "Brad Rucker",
+      "unsplashLink": "https://unsplash.com/photos/woman-crossing-a-street-at-dusk-f3iQaE19q-k"
+    },
+    {
+      "id": "east-washington-dc-08",
+      "file": "east/washington-dc-08.jpg",
+      "city": "Washington D.C.",
+      "coast": "east",
+      "unsplashId": "6KmHJfxtad4",
+      "photographer": "Praswin Prakashan",
+      "unsplashLink": "https://unsplash.com/photos/a-group-of-people-walking-down-a-street-next-to-tall-buildings-6KmHJfxtad4"
+    },
+    {
+      "id": "east-baltimore-03",
+      "file": "east/baltimore-03.jpg",
+      "city": "Baltimore",
+      "coast": "east",
+      "unsplashId": "msJUm8ouCz0",
+      "photographer": "Aaron Burden",
+      "unsplashLink": "https://unsplash.com/photos/a-city-skyline-is-lit-up-at-night-msJUm8ouCz0"
+    },
+    {
+      "id": "east-baltimore-04",
+      "file": "east/baltimore-04.jpg",
+      "city": "Baltimore",
+      "coast": "east",
+      "unsplashId": "pP431w0Ssqg",
+      "photographer": "Richard Ringel",
+      "unsplashLink": "https://unsplash.com/photos/person-sitting-by-waterfront-overlooking-city-skyline-at-dusk-pP431w0Ssqg"
+    },
+    {
+      "id": "east-baltimore-05",
+      "file": "east/baltimore-05.jpg",
+      "city": "Baltimore",
+      "coast": "east",
+      "unsplashId": "-uQK6Hrzu4k",
+      "photographer": "Colin Lloyd",
+      "unsplashLink": "https://unsplash.com/photos/city-with-high-rise-buildings-under-blue-sky-during-daytime--uQK6Hrzu4k"
+    },
+    {
+      "id": "east-baltimore-06",
+      "file": "east/baltimore-06.jpg",
+      "city": "Baltimore",
+      "coast": "east",
+      "unsplashId": "x_fwQChVDrk",
+      "photographer": "Brendan Beale",
+      "unsplashLink": "https://unsplash.com/photos/brown-and-green-building-near-body-of-water-during-night-time-x_fwQChVDrk"
+    },
+    {
+      "id": "east-baltimore-07",
+      "file": "east/baltimore-07.jpg",
+      "city": "Baltimore",
+      "coast": "east",
+      "unsplashId": "3LW-MzohI2o",
+      "photographer": "Brendan Beale",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-across-body-of-water-during-daytime-3LW-MzohI2o"
+    },
+    {
+      "id": "east-baltimore-08",
+      "file": "east/baltimore-08.jpg",
+      "city": "Baltimore",
+      "coast": "east",
+      "unsplashId": "PTG5LtXx9pY",
+      "photographer": "Brendan Beale",
+      "unsplashLink": "https://unsplash.com/photos/city-buildings-during-night-time-PTG5LtXx9pY"
+    },
+    {
+      "id": "east-atlanta-03",
+      "file": "east/atlanta-03.jpg",
+      "city": "Atlanta",
+      "coast": "east",
+      "unsplashId": "nbBoxPoids0",
+      "photographer": "Nils Huenerfuerst",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-with-a-ferris-wheel-in-the-foreground-nbBoxPoids0"
+    },
+    {
+      "id": "east-atlanta-04",
+      "file": "east/atlanta-04.jpg",
+      "city": "Atlanta",
+      "coast": "east",
+      "unsplashId": "HDq0iyFh4xY",
+      "photographer": "Richard Sagredo",
+      "unsplashLink": "https://unsplash.com/photos/a-ferris-wheel-in-a-city-HDq0iyFh4xY"
+    },
+    {
+      "id": "east-atlanta-05",
+      "file": "east/atlanta-05.jpg",
+      "city": "Atlanta",
+      "coast": "east",
+      "unsplashId": "IDb-PwCZ58o",
+      "photographer": "Venti Views",
+      "unsplashLink": "https://unsplash.com/photos/time-lapse-photography-of-city-during-night-time-IDb-PwCZ58o"
+    },
+    {
+      "id": "east-atlanta-06",
+      "file": "east/atlanta-06.jpg",
+      "city": "Atlanta",
+      "coast": "east",
+      "unsplashId": "sR1Kz2auNJE",
+      "photographer": "Brad Huchteman",
+      "unsplashLink": "https://unsplash.com/photos/grey-high-rise-building-during-daytime-sR1Kz2auNJE"
+    },
+    {
+      "id": "east-atlanta-07",
+      "file": "east/atlanta-07.jpg",
+      "city": "Atlanta",
+      "coast": "east",
+      "unsplashId": "F2PrSHG2nEk",
+      "photographer": "Venti Views",
+      "unsplashLink": "https://unsplash.com/photos/an-aerial-view-of-a-city-at-night-F2PrSHG2nEk"
+    },
+    {
+      "id": "east-atlanta-08",
+      "file": "east/atlanta-08.jpg",
+      "city": "Atlanta",
+      "coast": "east",
+      "unsplashId": "iNmlqLLPV0A",
+      "photographer": "Venti Views",
+      "unsplashLink": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-night-time-iNmlqLLPV0A"
+    },
+    {
+      "id": "east-charlotte-03",
+      "file": "east/charlotte-03.jpg",
+      "city": "Charlotte",
+      "coast": "east",
+      "unsplashId": "P0oWnvP5cr0",
+      "photographer": "Matthew Chandler",
+      "unsplashLink": "https://unsplash.com/photos/a-city-skyline-with-blue-sky-P0oWnvP5cr0"
+    },
+    {
+      "id": "east-charlotte-04",
+      "file": "east/charlotte-04.jpg",
+      "city": "Charlotte",
+      "coast": "east",
+      "unsplashId": "6oVgjvKw3B8",
+      "photographer": "Sinjin Thomas",
+      "unsplashLink": "https://unsplash.com/photos/aerial-photography-of-streett-6oVgjvKw3B8"
+    },
+    {
+      "id": "east-charlotte-05",
+      "file": "east/charlotte-05.jpg",
+      "city": "Charlotte",
+      "coast": "east",
+      "unsplashId": "pnBkk1plrkk",
+      "photographer": "KDavid Montero",
+      "unsplashLink": "https://unsplash.com/photos/a-truck-is-driving-down-the-road-in-front-of-a-city-pnBkk1plrkk"
+    },
+    {
+      "id": "east-charlotte-06",
+      "file": "east/charlotte-06.jpg",
+      "city": "Charlotte",
+      "coast": "east",
+      "unsplashId": "_QyuZq6Accg",
+      "photographer": "MIRAGE",
+      "unsplashLink": "https://unsplash.com/photos/people-walking-on-sidewalk-near-white-concrete-building-during-daytime-_QyuZq6Accg"
+    },
+    {
+      "id": "east-charlotte-07",
+      "file": "east/charlotte-07.jpg",
+      "city": "Charlotte",
+      "coast": "east",
+      "unsplashId": "-Ni2fpLUgRI",
+      "photographer": "Clay Banks",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-under-gray-cloudy-sky-during-daytime--Ni2fpLUgRI"
+    },
+    {
+      "id": "east-charlotte-08",
+      "file": "east/charlotte-08.jpg",
+      "city": "Charlotte",
+      "coast": "east",
+      "unsplashId": "aGD27mQ4-XU",
+      "photographer": "Clay Banks",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-under-gray-cloudy-sky-during-daytime-aGD27mQ4-XU"
+    },
+    {
+      "id": "east-chicago-01",
+      "file": "east/chicago-01.jpg",
+      "city": "Chicago",
+      "coast": "east",
+      "unsplashId": "747xOBHjlwM",
+      "photographer": "Charles Shaffer",
+      "unsplashLink": "https://unsplash.com/photos/an-aerial-view-of-a-city-with-tall-buildings-747xOBHjlwM"
+    },
+    {
+      "id": "east-chicago-02",
+      "file": "east/chicago-02.jpg",
+      "city": "Chicago",
+      "coast": "east",
+      "unsplashId": "_3fp2mpwL5w",
+      "photographer": "Blake Griffin",
+      "unsplashLink": "https://unsplash.com/photos/grayscale-photo-of-city-skyline-_3fp2mpwL5w"
+    },
+    {
+      "id": "east-chicago-03",
+      "file": "east/chicago-03.jpg",
+      "city": "Chicago",
+      "coast": "east",
+      "unsplashId": "6MxW0gR6VMo",
+      "photographer": "Blake Griffin",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-during-night-time-6MxW0gR6VMo"
+    },
+    {
+      "id": "east-chicago-04",
+      "file": "east/chicago-04.jpg",
+      "city": "Chicago",
+      "coast": "east",
+      "unsplashId": "QE0WfnzziK4",
+      "photographer": "J G",
+      "unsplashLink": "https://unsplash.com/photos/city-skyline-under-blue-sky-during-daytime-QE0WfnzziK4"
+    },
+    {
+      "id": "east-chicago-05",
+      "file": "east/chicago-05.jpg",
+      "city": "Chicago",
+      "coast": "east",
+      "unsplashId": "mTv_83_BY4w",
+      "photographer": "Daniel Romero",
+      "unsplashLink": "https://unsplash.com/photos/skyscrapers-stand-tall-against-a-blue-sky-mTv_83_BY4w"
+    },
+    {
+      "id": "east-chicago-06",
+      "file": "east/chicago-06.jpg",
+      "city": "Chicago",
+      "coast": "east",
+      "unsplashId": "KIg5N80mpI4",
+      "photographer": "Zander Betterton",
+      "unsplashLink": "https://unsplash.com/photos/a-city-skyline-with-a-body-of-water-in-front-of-it-KIg5N80mpI4"
+    },
+    {
+      "id": "east-chicago-07",
+      "file": "east/chicago-07.jpg",
+      "city": "Chicago",
+      "coast": "east",
+      "unsplashId": "CRpWrguNrTY",
+      "photographer": "JR Harris",
+      "unsplashLink": "https://unsplash.com/photos/people-walking-on-park-near-high-rise-buildings-during-daytime-CRpWrguNrTY"
+    },
+    {
+      "id": "east-chicago-08",
+      "file": "east/chicago-08.jpg",
+      "city": "Chicago",
+      "coast": "east",
+      "unsplashId": "2OOIdDzNQA4",
+      "photographer": "Xiao daCunha",
+      "unsplashLink": "https://unsplash.com/photos/a-group-of-tall-buildings-2OOIdDzNQA4"
+    },
+    {
+      "id": "east-pittsburgh-01",
+      "file": "east/pittsburgh-01.jpg",
+      "city": "Pittsburgh",
+      "coast": "east",
+      "unsplashId": "dsG7qwe25yo",
+      "photographer": "Venti Views",
+      "unsplashLink": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-night-time-dsG7qwe25yo"
+    },
+    {
+      "id": "east-pittsburgh-02",
+      "file": "east/pittsburgh-02.jpg",
+      "city": "Pittsburgh",
+      "coast": "east",
+      "unsplashId": "YARs9OPqEg8",
+      "photographer": "Yash Banka",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-with-a-river-running-through-it-YARs9OPqEg8"
+    },
+    {
+      "id": "east-pittsburgh-03",
+      "file": "east/pittsburgh-03.jpg",
+      "city": "Pittsburgh",
+      "coast": "east",
+      "unsplashId": "gQxDR2vq9Ao",
+      "photographer": "Parker Sturdivant",
+      "unsplashLink": "https://unsplash.com/photos/a-black-and-white-photo-of-a-city-gQxDR2vq9Ao"
+    },
+    {
+      "id": "east-pittsburgh-04",
+      "file": "east/pittsburgh-04.jpg",
+      "city": "Pittsburgh",
+      "coast": "east",
+      "unsplashId": "oodEojEpw_U",
+      "photographer": "Forsaken Films",
+      "unsplashLink": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-oodEojEpw_U"
+    },
+    {
+      "id": "east-pittsburgh-05",
+      "file": "east/pittsburgh-05.jpg",
+      "city": "Pittsburgh",
+      "coast": "east",
+      "unsplashId": "mgaCx9xIJVU",
+      "photographer": "Forsaken Films",
+      "unsplashLink": "https://unsplash.com/photos/a-city-with-a-river-and-boats-mgaCx9xIJVU"
+    },
+    {
+      "id": "east-pittsburgh-06",
+      "file": "east/pittsburgh-06.jpg",
+      "city": "Pittsburgh",
+      "coast": "east",
+      "unsplashId": "epN4R8RwtiQ",
+      "photographer": "Eilis Garvey",
+      "unsplashLink": "https://unsplash.com/photos/photo-of-city-building-epN4R8RwtiQ"
+    },
+    {
+      "id": "east-pittsburgh-07",
+      "file": "east/pittsburgh-07.jpg",
+      "city": "Pittsburgh",
+      "coast": "east",
+      "unsplashId": "C6oO9fkFC7o",
+      "photographer": "Geoffrey Gu",
+      "unsplashLink": "https://unsplash.com/photos/a-bridge-over-a-river-with-a-city-in-the-background-C6oO9fkFC7o"
+    },
+    {
+      "id": "east-pittsburgh-08",
+      "file": "east/pittsburgh-08.jpg",
+      "city": "Pittsburgh",
+      "coast": "east",
+      "unsplashId": "xsP5_nmaxH0",
+      "photographer": "Jimmy Woo",
+      "unsplashLink": "https://unsplash.com/photos/a-train-on-a-bridge-over-a-river-xsP5_nmaxH0"
+    },
+    {
+      "id": "east-detroit-01",
+      "file": "east/detroit-01.jpg",
+      "city": "Detroit",
+      "coast": "east",
+      "unsplashId": "3aOu_O1ii_k",
+      "photographer": "G + L",
+      "unsplashLink": "https://unsplash.com/photos/the-sun-is-shining-over-a-city-with-tall-buildings-3aOu_O1ii_k"
+    },
+    {
+      "id": "east-detroit-02",
+      "file": "east/detroit-02.jpg",
+      "city": "Detroit",
+      "coast": "east",
+      "unsplashId": "3u8hqhe6tKI",
+      "photographer": "G + L",
+      "unsplashLink": "https://unsplash.com/photos/a-group-of-tall-buildings-in-a-city-3u8hqhe6tKI"
+    },
+    {
+      "id": "east-detroit-03",
+      "file": "east/detroit-03.jpg",
+      "city": "Detroit",
+      "coast": "east",
+      "unsplashId": "zt7Zk3lXLps",
+      "photographer": "Creative Hina By.Quileen",
+      "unsplashLink": "https://unsplash.com/photos/grayscale-photo-of-city-buildings-zt7Zk3lXLps"
+    },
+    {
+      "id": "east-detroit-04",
+      "file": "east/detroit-04.jpg",
+      "city": "Detroit",
+      "coast": "east",
+      "unsplashId": "n4D4OcrNdr8",
+      "photographer": "Venti Views",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-across-the-water-n4D4OcrNdr8"
+    },
+    {
+      "id": "east-detroit-05",
+      "file": "east/detroit-05.jpg",
+      "city": "Detroit",
+      "coast": "east",
+      "unsplashId": "prprJf02Lvs",
+      "photographer": "Peggy Paulson",
+      "unsplashLink": "https://unsplash.com/photos/a-group-of-people-walking-down-a-street-next-to-tall-buildings-prprJf02Lvs"
+    },
+    {
+      "id": "east-detroit-06",
+      "file": "east/detroit-06.jpg",
+      "city": "Detroit",
+      "coast": "east",
+      "unsplashId": "BFRx28vzYSM",
+      "photographer": "Peggy Paulson",
+      "unsplashLink": "https://unsplash.com/photos/a-church-with-a-steeple-and-a-traffic-light-BFRx28vzYSM"
+    },
+    {
+      "id": "east-detroit-07",
+      "file": "east/detroit-07.jpg",
+      "city": "Detroit",
+      "coast": "east",
+      "unsplashId": "2jVDWFiU-WY",
+      "photographer": "Casey Connell",
+      "unsplashLink": "https://unsplash.com/photos/a-group-of-tall-buildings-sitting-next-to-each-other-2jVDWFiU-WY"
+    },
+    {
+      "id": "east-detroit-08",
+      "file": "east/detroit-08.jpg",
+      "city": "Detroit",
+      "coast": "east",
+      "unsplashId": "x7adizSmQAM",
+      "photographer": "jatinder nagra",
+      "unsplashLink": "https://unsplash.com/photos/a-view-of-a-city-from-across-the-water-x7adizSmQAM"
+    }
+  ]
 }

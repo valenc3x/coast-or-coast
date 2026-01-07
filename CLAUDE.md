@@ -44,6 +44,11 @@ npm run dev
 UNSPLASH_ACCESS_KEY=your_key npm run seed-images
 ```
 
+The script is **idempotent** - it tracks downloaded Unsplash photo IDs and will:
+- Skip already-downloaded images on subsequent runs
+- Cap each city at 8 images max
+- Use multiple search terms per city for variety
+
 ### Option 2: Manual
 1. Add `.jpg` files to `public/images/west/` or `public/images/east/`
 2. Update `public/images.json`:
@@ -69,6 +74,6 @@ UNSPLASH_ACCESS_KEY=your_key npm run seed-images
 
 ## Cities Included
 
-**West Coast:** Seattle, Portland, San Francisco, Los Angeles, San Diego, Sacramento, Oakland, Phoenix
+**West Coast:** Seattle, Portland, San Francisco, Los Angeles, San Diego, Sacramento, Oakland, Phoenix, Denver, Las Vegas
 
-**East Coast:** New York, Boston, Philadelphia, Miami, Washington D.C., Baltimore, Atlanta, Charlotte
+**East Coast:** New York, Boston, Philadelphia, Miami, Washington D.C., Baltimore, Atlanta, Charlotte, Chicago, Pittsburgh, Detroit

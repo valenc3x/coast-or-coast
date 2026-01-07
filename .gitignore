@@ -4,3 +4,10 @@ dist
 *.local
 .env
 .env.*
+
+# Downloaded images (regenerate with npm run seed-images)
+public/images/west/
+public/images/east/
+
+# Serena config
+.serena/

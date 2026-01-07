@@ -3,6 +3,11 @@
  *
  * Downloads downtown/skyline images from Unsplash for the game.
  *
+ * Features:
+ *   - Multiple search terms per city for image variety
+ *   - Idempotent: tracks Unsplash photo IDs to avoid duplicates
+ *   - Can be run multiple times to incrementally add images
+ *
  * Usage:
  *   1. Get a free API key from https://unsplash.com/developers
  *   2. Set UNSPLASH_ACCESS_KEY environment variable
@@ -24,30 +29,225 @@ const MANIFEST_PATH = path.join(PUBLIC_DIR, 'images.json')
 
 const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY
 
+// Configuration
+const IMAGES_PER_SEARCH_TERM = 3  // Number of images to fetch per search query
+const MAX_IMAGES_PER_CITY = 8     // Cap total images per city
+
 const CITIES = {
   west: [
-    { slug: 'seattle', searchTerm: 'seattle downtown skyline' },
-    { slug: 'portland', searchTerm: 'portland oregon downtown' },
-    { slug: 'san-francisco', searchTerm: 'san francisco downtown skyline' },
-    { slug: 'los-angeles', searchTerm: 'los angeles downtown skyline' },
-    { slug: 'san-diego', searchTerm: 'san diego downtown skyline' },
-    { slug: 'sacramento', searchTerm: 'sacramento california downtown' },
-    { slug: 'oakland', searchTerm: 'oakland california downtown' },
-    { slug: 'phoenix', searchTerm: 'phoenix arizona downtown' },
+    {
+      slug: 'seattle',
+      name: 'Seattle',
+      searchTerms: [
+        'seattle downtown skyline',
+        'seattle cityscape buildings',
+        'seattle financial district',
+        'seattle urban architecture',
+        'seattle city aerial'
+      ]
+    },
+    {
+      slug: 'portland',
+      name: 'Portland',
+      searchTerms: [
+        'portland oregon downtown skyline',
+        'portland cityscape',
+        'portland urban buildings',
+        'portland city aerial'
+      ]
+    },
+    {
+      slug: 'san-francisco',
+      name: 'San Francisco',
+      searchTerms: [
+        'san francisco downtown skyline',
+        'san francisco financial district',
+        'san francisco cityscape',
+        'san francisco urban buildings',
+        'san francisco embarcadero'
+      ]
+    },
+    {
+      slug: 'los-angeles',
+      name: 'Los Angeles',
+      searchTerms: [
+        'los angeles downtown skyline',
+        'la cityscape buildings',
+        'los angeles financial district',
+        'dtla urban architecture',
+        'los angeles city aerial'
+      ]
+    },
+    {
+      slug: 'san-diego',
+      name: 'San Diego',
+      searchTerms: [
+        'san diego downtown skyline',
+        'san diego cityscape',
+        'san diego gaslamp district',
+        'san diego urban buildings'
+      ]
+    },
+    {
+      slug: 'sacramento',
+      name: 'Sacramento',
+      searchTerms: [
+        'sacramento california downtown',
+        'sacramento skyline',
+        'sacramento cityscape'
+      ]
+    },
+    {
+      slug: 'oakland',
+      name: 'Oakland',
+      searchTerms: [
+        'oakland california downtown',
+        'oakland skyline',
+        'oakland cityscape buildings'
+      ]
+    },
+    {
+      slug: 'phoenix',
+      name: 'Phoenix',
+      searchTerms: [
+        'phoenix arizona downtown skyline',
+        'phoenix cityscape',
+        'phoenix urban buildings',
+        'phoenix financial district'
+      ]
+    },
+    {
+      slug: 'denver',
+      name: 'Denver',
+      searchTerms: [
+        'denver colorado downtown skyline',
+        'denver cityscape',
+        'denver urban buildings',
+        'denver financial district'
+      ]
+    },
+    {
+      slug: 'las-vegas',
+      name: 'Las Vegas',
+      searchTerms: [
+        'las vegas strip skyline',
+        'las vegas downtown cityscape',
+        'las vegas urban buildings'
+      ]
+    },
   ],
   east: [
-    { slug: 'new-york', searchTerm: 'new york city manhattan skyline' },
-    { slug: 'boston', searchTerm: 'boston downtown skyline' },
-    { slug: 'philadelphia', searchTerm: 'philadelphia downtown skyline' },
-    { slug: 'miami', searchTerm: 'miami downtown skyline' },
-    { slug: 'washington-dc', searchTerm: 'washington dc downtown' },
-    { slug: 'baltimore', searchTerm: 'baltimore downtown skyline' },
-    { slug: 'atlanta', searchTerm: 'atlanta downtown skyline' },
-    { slug: 'charlotte', searchTerm: 'charlotte north carolina downtown' },
+    {
+      slug: 'new-york',
+      name: 'New York',
+      searchTerms: [
+        'new york city manhattan skyline',
+        'nyc downtown financial district',
+        'manhattan cityscape',
+        'new york urban architecture',
+        'nyc midtown buildings',
+        'new york city aerial'
+      ]
+    },
+    {
+      slug: 'boston',
+      name: 'Boston',
+      searchTerms: [
+        'boston downtown skyline',
+        'boston cityscape',
+        'boston financial district',
+        'boston urban buildings'
+      ]
+    },
+    {
+      slug: 'philadelphia',
+      name: 'Philadelphia',
+      searchTerms: [
+        'philadelphia downtown skyline',
+        'philadelphia cityscape',
+        'philly urban buildings',
+        'philadelphia center city'
+      ]
+    },
+    {
+      slug: 'miami',
+      name: 'Miami',
+      searchTerms: [
+        'miami downtown skyline',
+        'miami brickell cityscape',
+        'miami urban buildings',
+        'miami financial district',
+        'miami city aerial'
+      ]
+    },
+    {
+      slug: 'washington-dc',
+      name: 'Washington D.C.',
+      searchTerms: [
+        'washington dc downtown',
+        'dc cityscape buildings',
+        'washington dc urban architecture'
+      ]
+    },
+    {
+      slug: 'baltimore',
+      name: 'Baltimore',
+      searchTerms: [
+        'baltimore downtown skyline',
+        'baltimore inner harbor cityscape',
+        'baltimore urban buildings'
+      ]
+    },
+    {
+      slug: 'atlanta',
+      name: 'Atlanta',
+      searchTerms: [
+        'atlanta downtown skyline',
+        'atlanta cityscape',
+        'atlanta midtown buildings',
+        'atlanta urban architecture'
+      ]
+    },
+    {
+      slug: 'charlotte',
+      name: 'Charlotte',
+      searchTerms: [
+        'charlotte north carolina downtown skyline',
+        'charlotte cityscape',
+        'charlotte uptown buildings'
+      ]
+    },
+    {
+      slug: 'chicago',
+      name: 'Chicago',
+      searchTerms: [
+        'chicago downtown skyline',
+        'chicago loop cityscape',
+        'chicago urban architecture',
+        'chicago michigan avenue',
+        'chicago city aerial'
+      ]
+    },
+    {
+      slug: 'pittsburgh',
+      name: 'Pittsburgh',
+      searchTerms: [
+        'pittsburgh downtown skyline',
+        'pittsburgh cityscape',
+        'pittsburgh golden triangle'
+      ]
+    },
+    {
+      slug: 'detroit',
+      name: 'Detroit',
+      searchTerms: [
+        'detroit downtown skyline',
+        'detroit cityscape',
+        'detroit urban buildings'
+      ]
+    },
   ]
 }
-
-const IMAGES_PER_CITY = 2
 
 async function fetchUnsplashImages(searchTerm, count) {
   return new Promise((resolve, reject) => {
@@ -102,26 +302,50 @@ async function downloadImage(imageUrl, destPath) {
   })
 }
 
-function getCityDisplayName(slug) {
-  const names = {
-    'seattle': 'Seattle',
-    'portland': 'Portland',
-    'san-francisco': 'San Francisco',
-    'los-angeles': 'Los Angeles',
-    'san-diego': 'San Diego',
-    'sacramento': 'Sacramento',
-    'oakland': 'Oakland',
-    'phoenix': 'Phoenix',
-    'new-york': 'New York',
-    'boston': 'Boston',
-    'philadelphia': 'Philadelphia',
-    'miami': 'Miami',
-    'washington-dc': 'Washington D.C.',
-    'baltimore': 'Baltimore',
-    'atlanta': 'Atlanta',
-    'charlotte': 'Charlotte'
+/**
+ * Load existing manifest or create empty one
+ */
+function loadManifest() {
+  try {
+    const data = fs.readFileSync(MANIFEST_PATH, 'utf8')
+    return JSON.parse(data)
+  } catch {
+    return { images: [] }
   }
-  return names[slug] || slug
+}
+
+/**
+ * Get set of already downloaded Unsplash photo IDs
+ */
+function getExistingPhotoIds(manifest) {
+  return new Set(
+    manifest.images
+      .filter(img => img.unsplashId)
+      .map(img => img.unsplashId)
+  )
+}
+
+/**
+ * Get count of existing images for a city
+ */
+function getCityImageCount(manifest, coast, citySlug) {
+  return manifest.images.filter(
+    img => img.coast === coast && img.id.includes(`${coast}-${citySlug}-`)
+  ).length
+}
+
+/**
+ * Get next available image number for a city
+ */
+function getNextImageNumber(manifest, coast, citySlug) {
+  const existing = manifest.images
+    .filter(img => img.coast === coast && img.id.startsWith(`${coast}-${citySlug}-`))
+    .map(img => {
+      const match = img.id.match(/-(\d+)$/)
+      return match ? parseInt(match[1], 10) : 0
+    })
+
+  return existing.length > 0 ? Math.max(...existing) + 1 : 1
 }
 
 async function main() {
@@ -152,54 +376,109 @@ async function main() {
     process.exit(0)
   }
 
-  console.log('Starting image download from Unsplash...\n')
+  console.log('Coast or Coast - Image Seeder')
+  console.log('=============================\n')
 
   // Ensure directories exist
   fs.mkdirSync(path.join(IMAGES_DIR, 'west'), { recursive: true })
   fs.mkdirSync(path.join(IMAGES_DIR, 'east'), { recursive: true })
 
-  const manifest = { images: [] }
+  // Load existing manifest for idempotency
+  const manifest = loadManifest()
+  const existingPhotoIds = getExistingPhotoIds(manifest)
+
+  console.log(`Existing images: ${manifest.images.length}`)
+  console.log(`Tracked Unsplash IDs: ${existingPhotoIds.size}\n`)
+
+  let newImagesCount = 0
+  let skippedCount = 0
 
   for (const [coast, cities] of Object.entries(CITIES)) {
     console.log(`\n=== ${coast.toUpperCase()} COAST ===`)
 
     for (const city of cities) {
-      console.log(`\nFetching: ${city.slug}`)
+      const currentCount = getCityImageCount(manifest, coast, city.slug)
 
-      try {
-        const photos = await fetchUnsplashImages(city.searchTerm, IMAGES_PER_CITY)
+      if (currentCount >= MAX_IMAGES_PER_CITY) {
+        console.log(`\n${city.name}: Already have ${currentCount} images (max: ${MAX_IMAGES_PER_CITY}), skipping`)
+        continue
+      }
 
-        for (let i = 0; i < photos.length; i++) {
-          const photo = photos[i]
-          const filename = `${city.slug}-${String(i + 1).padStart(2, '0')}.jpg`
-          const relativePath = `${coast}/${filename}`
-          const fullPath = path.join(IMAGES_DIR, relativePath)
+      console.log(`\n${city.name}: ${currentCount}/${MAX_IMAGES_PER_CITY} images`)
 
-          // Download regular size (1080px width)
-          const imageUrl = photo.urls.regular
-          console.log(`  Downloading ${filename}...`)
-          await downloadImage(imageUrl, fullPath)
+      let cityNewImages = 0
+      let nextNumber = getNextImageNumber(manifest, coast, city.slug)
 
-          manifest.images.push({
-            id: `${coast}-${city.slug}-${String(i + 1).padStart(2, '0')}`,
-            file: relativePath,
-            city: getCityDisplayName(city.slug),
-            coast: coast
-          })
+      // Try each search term until we hit the max
+      for (const searchTerm of city.searchTerms) {
+        if (currentCount + cityNewImages >= MAX_IMAGES_PER_CITY) {
+          break
         }
 
-        // Rate limiting - be nice to Unsplash
-        await new Promise(r => setTimeout(r, 1000))
-      } catch (err) {
-        console.error(`  Error fetching ${city.slug}: ${err.message}`)
+        try {
+          console.log(`  Searching: "${searchTerm}"`)
+          const photos = await fetchUnsplashImages(searchTerm, IMAGES_PER_SEARCH_TERM)
+
+          for (const photo of photos) {
+            // Skip if we already have this exact photo
+            if (existingPhotoIds.has(photo.id)) {
+              skippedCount++
+              continue
+            }
+
+            // Skip if we've hit the city max
+            if (currentCount + cityNewImages >= MAX_IMAGES_PER_CITY) {
+              break
+            }
+
+            const filename = `${city.slug}-${String(nextNumber).padStart(2, '0')}.jpg`
+            const relativePath = `${coast}/${filename}`
+            const fullPath = path.join(IMAGES_DIR, relativePath)
+
+            // Download regular size (1080px width)
+            const imageUrl = photo.urls.regular
+            console.log(`    Downloading ${filename}...`)
+            await downloadImage(imageUrl, fullPath)
+
+            // Add to manifest with Unsplash ID for deduplication
+            manifest.images.push({
+              id: `${coast}-${city.slug}-${String(nextNumber).padStart(2, '0')}`,
+              file: relativePath,
+              city: city.name,
+              coast: coast,
+              unsplashId: photo.id,
+              photographer: photo.user?.name || 'Unknown',
+              unsplashLink: photo.links?.html || null
+            })
+
+            existingPhotoIds.add(photo.id)
+            cityNewImages++
+            newImagesCount++
+            nextNumber++
+          }
+
+          // Rate limiting - be nice to Unsplash API
+          await new Promise(r => setTimeout(r, 500))
+
+        } catch (err) {
+          console.error(`    Error: ${err.message}`)
+        }
+      }
+
+      if (cityNewImages > 0) {
+        console.log(`  Added ${cityNewImages} new images`)
       }
     }
   }
 
-  // Write manifest
+  // Write updated manifest
   fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2))
-  console.log(`\n✓ Downloaded ${manifest.images.length} images`)
-  console.log(`✓ Manifest written to public/images.json`)
+
+  console.log('\n=============================')
+  console.log(`Total images: ${manifest.images.length}`)
+  console.log(`New images downloaded: ${newImagesCount}`)
+  console.log(`Duplicates skipped: ${skippedCount}`)
+  console.log(`Manifest saved to: public/images.json`)
 }
 
 main().catch(console.error)
