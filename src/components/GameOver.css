@@ -5,7 +5,7 @@
 
 .game-over h2 {
   font-size: 1.5rem;
-  color: #888;
+  color: #aaa;
   margin-bottom: 1.5rem;
 }
 
@@ -24,11 +24,11 @@
 
 .score-label {
   font-size: 1rem;
-  color: #888;
+  color: #aaa;
 }
 
 .last-city {
-  color: #aaa;
+  color: #bbb;
   margin-bottom: 0.5rem;
 }
 
@@ -55,4 +55,19 @@
 .restart-button:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(233, 69, 96, 0.4);
+}
+
+.restart-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .score-number {
+    font-size: 3rem;
+  }
+
+  .restart-button {
+    padding: 0.75rem 1.5rem;
+  }
 }

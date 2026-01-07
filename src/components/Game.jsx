@@ -42,20 +42,26 @@ function Game({ images, onGameOver }) {
     if (isCorrect) {
       setFeedback({ correct: true, city: currentImage.city })
       setTimeout(() => {
-        setScore(s => s + 1)
+        setScore(s => {
+          const newScore = s + 1
+          if (currentIndex + 1 >= shuffledImages.length) {
+            onGameOver(newScore, null)
+          }
+          return newScore
+        })
         setFeedback(null)
 
-        if (currentIndex + 1 >= shuffledImages.length) {
-          // Ran out of images - they win!
-          onGameOver(score + 1, null)
-        } else {
+        if (currentIndex + 1 < shuffledImages.length) {
           setCurrentIndex(i => i + 1)
         }
       }, 1000)
     } else {
       setFeedback({ correct: false, city: currentImage.city })
       setTimeout(() => {
-        onGameOver(score, currentImage.city)
+        setScore(s => {
+          onGameOver(s, currentImage.city)
+          return s
+        })
       }, 1500)
     }
   }, [currentImage, currentIndex, feedback, onGameOver, score, shuffledImages.length])

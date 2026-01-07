@@ -7,7 +7,7 @@
 }
 
 .game-loading {
-  color: #888;
+  color: #aaa;
 }
 
 .score-bar {
@@ -24,7 +24,7 @@
 }
 
 .remaining {
-  color: #888;
+  color: #aaa;
 }
 
 .image-container {
@@ -95,6 +95,11 @@
   transform: scale(1.02);
 }
 
+.guess-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
 .guess-button.west {
   background: linear-gradient(135deg, #f39c12, #e74c3c);
   color: white;
@@ -103,4 +108,21 @@
 .guess-button.east {
   background: linear-gradient(135deg, #3498db, #9b59b6);
   color: white;
+}
+
+@media (max-width: 640px) {
+  .score-bar {
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+  }
+
+  .image-container {
+    aspect-ratio: 4 / 3;
+  }
+
+  .guess-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
